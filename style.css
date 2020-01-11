@@ -135,8 +135,35 @@ border: 5px solid;
 } */
 
 
-
+/* 
 img{
     max-width: 100%;
     height: auto;
+} */
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box-content{
+    width: 23%;
+}
+
+img{
+    object-fit: contain;
+    width: 100%;
+}
+
+@media screen and (max-width:768px){
+    .box-content{
+        width: calc(50% - 5px);
+    }
+}
+
+@media screen and (max-width:480px){
+    .box-content{
+        width: 100%;
+    }
 }
